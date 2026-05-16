@@ -1,6 +1,5 @@
 .main {
   font-family: "Inter", sans-serif;
-  background-image: url("../public/background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,7 +12,7 @@
   margin: 0px;
 }
 
-/* Hero Container */
+/* Hero Container
 .heroContainer {
   display: flex;
   justify-content: center;
@@ -23,7 +22,7 @@
 }
 
 /* Animation */
-.fadeUp {
+/* .fadeUp {
   opacity: 0;
   transform: translateY(px);
   animation: fadeUp 1s ease forwards;
@@ -39,62 +38,4 @@
     transform: translateY(0px);
   }
 }
-
-/* Hero Title */
-.heroTitle {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 32px;
-  letter-spacing: 0%;
-  color: white;
-  padding: 0px;
-  margin: 0px;
-}
-
-/* Hero Description */
-.heroDiscription {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: 0%;
-  color: white;
-  margin: 0px;
-  padding-top: 16px;
-}
-
-/* Hero Button | View Now */
-.heroButton {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.5%;
-  color: #ffffff;
-  text-align: center;
-
-  background-color: #e44848;
-  outline: none;
-  padding: 16px 48px 16px 48px;
-  border: 1px solid #e44848;
-  border-radius: 200px;
-  width: 90px;
-  text-decoration: none;
-  margin-top: 40px;
-  cursor: pointer;
-  transition:
-    background-color 0.3s ease,
-    text-decoration-color 0.3s ease;
-}
-
-/*  Hero Button | View Now | Hover| Active |Focus */
-
-.heroButton:hover {
-  background-color: #d84343;
-}
-
-.heroButton:focus {
-  background-color: #d84343;
-}
-
-.heroButton:active {
-  background-color: #d84343;
-}
+  */
