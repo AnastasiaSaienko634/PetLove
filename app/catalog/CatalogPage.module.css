@@ -1,0 +1,10 @@
+/* Main Container Catalog */
+.catalogContainer {
+  display: flex;
+  gap: 54px;
+  margin: 0px;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}

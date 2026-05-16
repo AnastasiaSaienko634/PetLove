@@ -1,0 +1,58 @@
+import { Camper } from "@/types/campers";
+import { nextServer } from "./api";
+
+// Fetch all Campers response
+interface FetchCampersResponse {
+  total: number;
+  items: Camper[];
+}
+// Fetch all Campers interface
+interface FetchParamsCampers {
+  pageParam: number;
+  limit: number;
+}
+
+//Fetch all Campers
+export const fetchCampers = async ({
+  pageParam = 1,
+  limit = 4,
+}: FetchParamsCampers) => {
+  const response = await nextServer.get<FetchCampersResponse>("/campers", {
+    params: {
+      page: pageParam,
+      limit,
+    },
+  });
+  return response.data;
+};
+
+//Fetch Camper by Id
+export const fetchCamperById = async (id: string) => {
+  const response = await nextServer.get<Camper>(`/campers/${id}`);
+  return response.data;
+};
+
+//Fetch Camper by Filter
+export const fetchCampersByFilter = async (
+  vehicleEquipment: Record<string, boolean>,
+  vehicleType: string,
+  location: string,
+) => {
+  const filteredEquipment: Record<string, boolean> = {};
+
+  Object.keys(vehicleEquipment).forEach((key) => {
+    if (vehicleEquipment[key]) {
+      filteredEquipment[key] = true;
+    }
+  });
+
+  const params = {
+    ...(location && { location }),
+    ...(vehicleType && { form: vehicleType }),
+    ...filteredEquipment,
+  };
+
+  const response = await nextServer.get("/campers", { params });
+
+  return response.data.items;
+};

@@ -1,0 +1,130 @@
+/* Booking container */
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 523px;
+  width: 100%;
+  border: 2px solid #dadde1;
+  border-radius: 10px;
+
+  margin: 0 auto;
+  padding-top: 44px;
+  padding-bottom: 44px;
+  padding-left: 57px;
+  padding-right: 57px;
+}
+/* Booking Titel | Booking Description */
+
+.bookingTitle {
+  display: flex;
+
+  margin: 0px;
+  margin-right: auto;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #101828;
+}
+
+.bookingDescription {
+  margin: 0px;
+  margin-right: auto;
+  color: #6c717b;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* Booking From | Booking Field  | Booking Textarea*/
+.bookingForm {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  padding-top: 24px;
+}
+
+.bookingField {
+  border-radius: 12px;
+  width: 510px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+
+  border: 1px solid #f7f7f7;
+  background-color: #f7f7f7;
+  color: #000000;
+}
+
+.bookingFieldDate {
+  border-radius: 12px;
+  width: 510px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+
+  border: 1px solid #f7f7f7;
+  background-color: #f7f7f7;
+  color: #000000;
+}
+
+.bookingTextarea {
+  border-radius: 12px;
+  width: 510px;
+  padding-top: 19px;
+  padding-bottom: 18px;
+  padding-left: 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+
+  border: 1px solid #f7f7f7;
+  background-color: #f7f7f7;
+  color: #000000;
+}
+
+/* Booking Button */
+.bookingButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  background-color: #e44848;
+  color: white;
+  padding: 16px 63px 16px 63px;
+  margin-top: 24px;
+  border-radius: 200px;
+  width: 166px;
+
+  transition: background-color 0.25s ease;
+}
+
+/* Booking Button | hover | active | focus */
+.bookingButton:hover {
+  background-color: #d84343;
+  cursor: pointer;
+}
+
+.bookingButton:active {
+  background-color: #d84343;
+  cursor: pointer;
+}
+
+.bookingButton:focus {
+  background-color: #d84343;
+}
+
+/* Error Message  */
+
+.errorMessage {
+  color: #e44848;
+  font-size: 14px;
+}
