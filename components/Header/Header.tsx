@@ -27,6 +27,14 @@ const Header = () => {
           </Link>
         </li>
       </ul>
+      <div className={css.authorizationLinks}>
+        <Link className={css.logInLink} href="">
+          Log In
+        </Link>
+        <Link className={css.registrationLink} href="">
+          Registration
+        </Link>
+      </div>
     </div>
   );
 };

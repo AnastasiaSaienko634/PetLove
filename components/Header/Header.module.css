@@ -1,5 +1,5 @@
 .header {
-  padding-top: 27px;
+  padding-top: 16px;
   padding-bottom: 123px;
   display: flex;
   justify-content: space-between;
@@ -28,9 +28,71 @@
 /* List Link */
 .linkList {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 
 /* List Item Link */
 .listItem {
+  font-family: sans-serif;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -3%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.listItem:hover {
+  background-color: #fff4df;
+  color: #f6b83d;
+}
+
+/* Authorization  */
+.authorizationLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-right: 64px;
+}
+
+.logInLink {
+  color: #ffffff;
+  border: 1px solid;
+  border-radius: 30px;
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
+  transition: all 0.3s ease;
+}
+
+.logInLink:hover {
+  background-color: #fff4df;
+  color: #f6b83d;
+}
+
+.registrationLink {
+  border-radius: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #f6b83d;
+  background-color: #fff4df;
+  transition: all 0.3s ease;
+}
+
+.registrationLink:hover {
+  background-color: #fbe7c1;
+  color: #f6b83d;
 }
