@@ -21,11 +21,9 @@
 /* Hero  */
 .heroContainer {
   margin-top: 16px;
-  padding-top: 112px;
   padding-left: 64px;
   padding-bottom: 32px;
   border-radius: 60px;
-  display: flex;
   background-color: #f6b83d;
 }
 
@@ -42,6 +40,11 @@
 
 .markedText {
   opacity: 0.5;
+}
+
+/* Text Hero */
+.textHero {
+  display: flex;
 }
 
 /* Descritpion */

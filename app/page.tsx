@@ -10,14 +10,16 @@ const Home = () => {
       <div>
         <div className={css.heroContainer}>
           <Header />
-          <h1 className={css.titleHero}>
-            Take good <span className={css.markedText}>care</span> of your small
-            pets
-          </h1>
-          <p className={css.descriptionHero}>
-            Choosing a pet for your home is a choice that is meant to enrich
-            your life with immeasurable joy and tenderness.
-          </p>
+          <div className={css.textHero}>
+            <h1 className={css.titleHero}>
+              Take good <span className={css.markedText}>care</span> of your
+              small pets
+            </h1>
+            <p className={css.descriptionHero}>
+              Choosing a pet for your home is a choice that is meant to enrich
+              your life with immeasurable joy and tenderness.
+            </p>
+          </div>
         </div>
         <Image
           className={css.backgroundImg}

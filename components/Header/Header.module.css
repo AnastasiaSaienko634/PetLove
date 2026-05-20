@@ -1,0 +1,36 @@
+.header {
+  padding-top: 27px;
+  padding-bottom: 123px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  align-items: center;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+  letter-spacing: -4%;
+  color: #ffffff;
+}
+
+.logoIcon {
+  width: 20px;
+  height: 20px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+/* List Link */
+.linkList {
+  display: flex;
+  gap: 10px;
+}
+
+/* List Item Link */
+.listItem {
+}
