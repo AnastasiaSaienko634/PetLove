@@ -1,3 +1,4 @@
+/* Haeder */
 .header {
   padding-top: 16px;
   padding-bottom: 123px;
@@ -50,6 +51,7 @@
   transition: all 0.3s ease;
 }
 
+/* List Item Link | Hover */
 .listItem:hover {
   background-color: #fff4df;
   color: #f6b83d;
@@ -64,6 +66,7 @@
   margin-right: 64px;
 }
 
+/* Login Link */
 .logInLink {
   color: #ffffff;
   border: 1px solid;
@@ -76,11 +79,13 @@
   transition: all 0.3s ease;
 }
 
+/* Login Link | Link */
 .logInLink:hover {
   background-color: #fff4df;
   color: #f6b83d;
 }
 
+/* Register Link */
 .registrationLink {
   border-radius: 30px;
   padding-top: 15px;
@@ -92,6 +97,7 @@
   transition: all 0.3s ease;
 }
 
+/* /* Register Link | Hover */
 .registrationLink:hover {
   background-color: #fbe7c1;
   color: #f6b83d;
