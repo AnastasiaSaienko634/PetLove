@@ -1,8 +1,8 @@
 import Link from "next/link";
-import css from "./Header.module.css";
+import css from "./HeaderWh.module.css";
 import { FaHeart } from "react-icons/fa";
 
-const Header = () => {
+const HeaderWh = () => {
   return (
     <div className={css.header}>
       <Link href="/" className={css.logo}>
@@ -39,4 +39,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderWh;

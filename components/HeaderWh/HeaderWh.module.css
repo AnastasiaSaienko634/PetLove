@@ -1,0 +1,105 @@
+/* Haeder */
+.header {
+  padding-top: 16px;
+  padding-bottom: 123px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  align-items: center;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+  letter-spacing: -4%;
+  color: #262626;
+}
+
+.logoIcon {
+  width: 20px;
+  height: 20px;
+  padding-left: 2px;
+  padding-right: 2px;
+  color: #f6b83d;
+}
+
+/* List Link */
+.linkList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* List Item Link */
+.listItem {
+  font-family: sans-serif;
+  color: #262626;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -3%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #26262626;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+/* List Item Link | Hover */
+.listItem:hover {
+  border-color: #f6b83d;
+}
+
+/* Authorization  */
+.authorizationLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-right: 64px;
+}
+
+/* Login Link */
+.logInLink {
+  color: #ffffff;
+  border: 1px solid;
+  border-radius: 30px;
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
+  transition: all 0.3s ease;
+  background-color: #f6b83d;
+}
+
+/* Login Link | Link */
+.logInLink:hover {
+  background-color: #f9b020;
+  color: #ffffff;
+}
+
+/* Register Link */
+.registrationLink {
+  border-radius: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #f6b83d;
+  background-color: #fff4df;
+  transition: all 0.3s ease;
+}
+
+/* /* Register Link | Hover */
+.registrationLink:hover {
+  background-color: #fbe7c1;
+  color: #f6b83d;
+}
