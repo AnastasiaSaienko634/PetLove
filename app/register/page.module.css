@@ -160,3 +160,14 @@
   letter-spacing: -3%;
   color: #f6b83d;
 }
+
+.errField {
+  padding: 0px;
+  margin: 0px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -3%;
+  padding-left: 16px;
+  color: #ef2447;
+}

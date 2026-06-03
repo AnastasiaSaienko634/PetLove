@@ -6,6 +6,20 @@ import register from "../../public/register.png";
 import cat from "../../public/cat.png";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import Link from "next/link";
+import * as Yup from "yup";
+
+const RegisterSchema = Yup.object({
+  email: Yup.string()
+    .email("Enter a valid Email")
+    .required("Email is required"),
+
+  password: Yup.string()
+    .min(7, "Minimum 7 characters")
+    .required("Password is required"),
+  confirmPs: Yup.string()
+    .min(7, "Minimum 7 characters")
+    .required("Password is required"),
+});
 
 const Register = () => {
   return (
@@ -47,13 +61,48 @@ const Register = () => {
           <p className={css.registerDescrip}>
             Thank you for your interest in our platform.
           </p>
-          <Formik>
+          <Formik
+            validationSchema={RegisterSchema}
+            initialValues={{
+              name: "",
+              email: "",
+              password: "",
+              confirmPs: "",
+            }}
+            onSubmit={(values) => {
+              console.log(values);
+            }}
+          >
             <Form className={css.formRegister}>
-              <Field className={css.fieldRegister} placeholder="Email" />
-              <Field className={css.fieldRegister} placeholder="Password" />
               <Field
+                name="email"
+                className={css.fieldRegister}
+                placeholder="Email"
+              />
+              <ErrorMessage
+                name="email"
+                component="p"
+                className={css.errField}
+              />
+              <Field
+                name="password"
+                className={css.fieldRegister}
+                placeholder="Password"
+              />
+              <ErrorMessage
+                name="password"
+                component="p"
+                className={css.errField}
+              />
+              <Field
+                name="confirmPs"
                 className={css.fieldRegister}
                 placeholder="Confirm password"
+              />
+              <ErrorMessage
+                name="confirmPs"
+                component="p"
+                className={css.errField}
               />
               <button className={css.btnRegister}>Registration</button>
             </Form>
