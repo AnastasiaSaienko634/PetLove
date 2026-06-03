@@ -4,6 +4,9 @@
   padding-bottom: 123px;
   display: flex;
   justify-content: space-between;
+  max-width: 1216px;
+  margin-top: 16px;
+  width: 100%;
 }
 
 /* Logo */
@@ -16,6 +19,7 @@
   font-size: 28px;
   line-height: 28px;
   letter-spacing: -4%;
+  margin-left: 64px;
   color: #262626;
 }
 
