@@ -1,4 +1,162 @@
+.registerPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f5f5;
+  padding-bottom: 32px;
+}
+
 .containerRegister {
   display: flex;
   justify-content: center;
+  gap: 32px;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+}
+
+.register {
+  position: relative;
+}
+
+.commentContainer {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  bottom: 1;
+  width: 294px;
+  margin-left: 61px;
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 20px;
+}
+
+.coverImg {
+  background-color: #fff4df;
+  padding: 14px 16px 14px 16px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.descComment {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+}
+
+.nameComment {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -3%;
+  color: #f6b83d;
+}
+
+.birthCat {
+  color: #26262680;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -2%;
+}
+
+.spanBithCat {
+  color: #262626;
+}
+
+.descCat {
+  color: #262626cc;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 14px;
+  letter-spacing: -2%;
+}
+
+.leftSide {
+  background-color: #ffffff;
+  width: 428px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 60px;
+  padding-top: 69px;
+  padding-left: 84px;
+  padding-right: 84px;
+}
+
+.registerTitle {
+  text-align: left;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 54px;
+  letter-spacing: -4%;
+  padding-bottom: 16px;
+}
+
+.registerDescrip {
+  color: #262626;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -2%;
+}
+
+.formRegister {
+  display: flex;
+  flex-direction: column;
+  width: 424px;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.fieldRegister {
+  padding: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -3%;
+  color: #26262680;
+  border-radius: 30px;
+  outline: none;
+  border: 1px solid #26262626;
+}
+
+.btnRegister {
+  font-weight: 500;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -3%;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #f6b83d;
+  border: 1px solid #f6b83d;
+  padding: 18px;
+  border-radius: 30px;
+  margin-bottom: 16px;
+}
+
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.textLink {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -3%;
+  color: #26262680;
+}
+
+.loginLink {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -3%;
+  color: #f6b83d;
 }
