@@ -79,9 +79,9 @@
   background-color: #ffffff;
   width: 428px;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   border-radius: 60px;
-  padding-top: 69px;
   padding-left: 84px;
   padding-right: 84px;
 }
