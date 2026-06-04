@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import css from "../app/not-found.module.css";
 import Link from "next/link";
+import HeaderWh from "@/components/HeaderWh/HeaderWh";
+import Image from "next/image";
+import cat from "../public/catErr.png";
 
 // Metadata
 export const metadata: Metadata = {
@@ -24,10 +27,24 @@ export const metadata: Metadata = {
 const NotFound = () => {
   return (
     <div className={css.notFoundContainer}>
-      <h1>404 - Page was not found.</h1>
-      <p>The page you were looking for was not found...</p>
-      {/* Link to Home Page */}
-      <Link href="/">Go to Home Page</Link>
+      <HeaderWh />
+      <div className={css.containerHover}>
+        <h1 className={css.title}>
+          4
+          <div className={css.catCover}>
+            <Image className={css.catImg} src={cat} alt="Cat" priority />
+          </div>
+          4
+        </h1>
+        <p className={css.description}>Ooops! This page not found :(</p>
+        <Link href="/" className={css.goBackBtn}>
+          To home page
+        </Link>
+      </div>
+      {/* <h1>404 - Page was not found.</h1>
+      <p>The page you were looking for was not found...</p> */}
+      {/* Link to Home Page
+      <Link href="/">Go to Home Page</Link> */}
     </div>
   );
 };

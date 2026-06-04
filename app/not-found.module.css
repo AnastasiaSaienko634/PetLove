@@ -1,8 +1,64 @@
 .notFoundContainer {
-  height: calc(100vh - 85px);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 0 64px;
+}
+
+.containerHover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 108px;
+  padding-bottom: 40px;
+  background-color: #f6b83d;
+  width: 1216px;
+  width: 100%;
+  border-radius: 60px;
+}
+
+.title {
+  display: flex;
+  font-weight: 800;
+  font-size: 300px;
+  line-height: 300px;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+
+.catCover {
+  background-color: #fac04b;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.catImg {
+  width: 100%;
+}
+
+.description {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -3%;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+
+.goBackBtn {
+  color: #f6b83d;
+  background-color: #fff4df;
+  border: 1px solid #fff4df;
+  padding: 14px 30px 14px 30px;
+
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -3%;
+  border-radius: 30px;
 }
