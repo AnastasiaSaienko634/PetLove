@@ -7,7 +7,7 @@ import Header from "@/components/Header/Header";
 const Home = () => {
   return (
     <main className={css.main}>
-      <div>
+      <div className={css.mainContainer}>
         <div className={css.heroContainer}>
           <Header />
           <div className={css.textHero}>

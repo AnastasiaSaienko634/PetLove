@@ -61,4 +61,10 @@
   line-height: 20px;
   letter-spacing: -3%;
   border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.goBackBtn:hover {
+  background-color: #fbe7c1;
+  color: #f6b83d;
 }
