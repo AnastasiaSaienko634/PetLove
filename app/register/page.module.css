@@ -119,7 +119,7 @@
   margin-top: 32px;
 }
 
-.fieldRegister {
+.fieldEmail {
   padding: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -132,12 +132,78 @@
   transition: all 0.3s ease;
 }
 
-.fieldRegister:focus {
+.fieldEmail:focus {
   border-color: #f6b83d;
 }
 
-.fieldRegister:active {
+.fieldEmail:active {
   border-color: #f6b83d;
+}
+
+.fieldErrorEmail {
+  border-color: red;
+}
+
+.fieldErrorEmail:focus {
+  border-color: red;
+}
+
+.fieldPassword {
+  padding: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -3%;
+  color: #26262680;
+  border-radius: 30px;
+  outline: black;
+  border: 1px solid #26262626;
+  transition: all 0.3s ease;
+}
+
+.fieldPassword:focus {
+  border-color: #f6b83d;
+}
+
+.fieldPassword:active {
+  border-color: #f6b83d;
+}
+
+.fieldErrorPassword {
+  border-color: red;
+}
+
+.fieldErrorPassword:focus {
+  border-color: red;
+}
+
+.fieldPasswordRep {
+  padding: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -3%;
+  color: #26262680;
+  border-radius: 30px;
+  outline: black;
+  border: 1px solid #26262626;
+  transition: all 0.3s ease;
+}
+
+.fieldPasswordRep:focus {
+  border-color: #f6b83d;
+}
+
+.fieldPasswordRep:active {
+  border-color: #f6b83d;
+}
+
+.fieldErrorPasswordRep {
+  border-color: red;
+}
+
+.fieldErrorPasswordRep:focus {
+  border-color: red;
 }
 
 .btnRegister {

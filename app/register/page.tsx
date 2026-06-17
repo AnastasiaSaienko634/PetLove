@@ -73,42 +73,44 @@ const Register = () => {
               console.log(values);
             }}
           >
-            <Form className={css.formRegister}>
-              <Field
-                type="email"
-                name="email"
-                className={css.fieldRegister}
-                placeholder="Email"
-              />
-              <ErrorMessage
-                name="email"
-                component="p"
-                className={css.errField}
-              />
-              <Field
-                type="password"
-                name="password"
-                className={css.fieldRegister}
-                placeholder="Password"
-              />
-              <ErrorMessage
-                name="password"
-                component="p"
-                className={css.errField}
-              />
-              <Field
-                type="password"
-                name="confirmPs"
-                className={css.fieldRegister}
-                placeholder="Confirm password"
-              />
-              <ErrorMessage
-                name="confirmPs"
-                component="p"
-                className={css.errField}
-              />
-              <button className={css.btnRegister}>Registration</button>
-            </Form>
+            {({ errors, touched }) => (
+              <Form className={css.formRegister}>
+                <Field
+                  type="email"
+                  name="email"
+                  className={`${css.fieldEmail} ${touched.email && errors.email ? css.fieldErrorEmail : ""} `}
+                  placeholder="Email"
+                />
+                <ErrorMessage
+                  name="email"
+                  component="p"
+                  className={css.errField}
+                />
+                <Field
+                  type="password"
+                  name="password"
+                  className={`${css.fieldPassword} ${touched.password && errors.password ? css.fieldErrorPassword : ""} `}
+                  placeholder="Password"
+                />
+                <ErrorMessage
+                  name="password"
+                  component="p"
+                  className={css.errField}
+                />
+                <Field
+                  type="password"
+                  name="confirmPs"
+                  className={`${css.fieldPasswordRep} ${touched.confirmPs && errors.confirmPs ? css.fieldErrorPasswordRep : ""} `}
+                  placeholder="Confirm password"
+                />
+                <ErrorMessage
+                  name="confirmPs"
+                  component="p"
+                  className={css.errField}
+                />
+                <button className={css.btnRegister}>Registration</button>
+              </Form>
+            )}
           </Formik>
           <div className={css.loginContainer}>
             <p className={css.textLink}>Already have an account?</p>{" "}
