@@ -71,6 +71,7 @@ const LogIn = () => {
           >
             <Form className={css.formLogin}>
               <Field
+                type="email"
                 name="email"
                 className={css.fieldLogin}
                 placeholder="Email"
@@ -81,6 +82,7 @@ const LogIn = () => {
                 className={css.errField}
               />
               <Field
+                type="password"
                 name="password"
                 className={css.fieldLogin}
                 placeholder="Password"

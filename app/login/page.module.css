@@ -1,3 +1,6 @@
+body {
+  height: 811px;
+}
 .loginPage {
   display: flex;
   flex-direction: column;
@@ -5,7 +8,6 @@
   background-color: #f8f5f5;
   padding-bottom: 32px;
   min-height: calc(100vh - 0px);
-  width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,9 +22,6 @@
 .rightSide {
   display: flex;
   flex-direction: column;
-}
-
-.register {
   position: relative;
 }
 
@@ -37,6 +36,7 @@
   background-color: #ffffff;
   padding: 16px;
   border-radius: 20px;
+  margin-bottom: 97px;
 }
 
 .coverImg {
@@ -126,6 +126,15 @@
   border-radius: 30px;
   outline: none;
   border: 1px solid #26262626;
+  transition: all 0.3s ease;
+}
+
+.fieldLogin:focus {
+  border-color: #f6b83d;
+}
+
+.fieldLogin:active {
+  border-color: #f6b83d;
 }
 
 .btnLogin {
@@ -141,6 +150,12 @@
   padding: 18px;
   border-radius: 30px;
   margin-bottom: 16px;
+  transition: all 0.3s ease;
+}
+
+.btnLogin:hover {
+  cursor: pointer;
+  background-color: #f9b020;
 }
 
 .registerContainer {

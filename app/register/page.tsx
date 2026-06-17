@@ -75,6 +75,7 @@ const Register = () => {
           >
             <Form className={css.formRegister}>
               <Field
+                type="email"
                 name="email"
                 className={css.fieldRegister}
                 placeholder="Email"
@@ -85,6 +86,7 @@ const Register = () => {
                 className={css.errField}
               />
               <Field
+                type="password"
                 name="password"
                 className={css.fieldRegister}
                 placeholder="Password"
@@ -95,6 +97,7 @@ const Register = () => {
                 className={css.errField}
               />
               <Field
+                type="password"
                 name="confirmPs"
                 className={css.fieldRegister}
                 placeholder="Confirm password"

@@ -6,6 +6,7 @@
   padding-bottom: 32px;
   min-height: calc(100vh - 0px);
   width: 100%;
+  height: 811px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,7 +24,7 @@
   flex-direction: column;
 }
 
-.register {
+.rightSide {
   position: relative;
 }
 
@@ -38,6 +39,7 @@
   background-color: #ffffff;
   padding: 16px;
   border-radius: 20px;
+  margin-bottom: 97px;
 }
 
 .coverImg {
@@ -125,8 +127,17 @@
   letter-spacing: -3%;
   color: #26262680;
   border-radius: 30px;
-  outline: none;
+  outline: black;
   border: 1px solid #26262626;
+  transition: all 0.3s ease;
+}
+
+.fieldRegister:focus {
+  border-color: #f6b83d;
+}
+
+.fieldRegister:active {
+  border-color: #f6b83d;
 }
 
 .btnRegister {
@@ -142,6 +153,12 @@
   padding: 18px;
   border-radius: 30px;
   margin-bottom: 16px;
+  transition: all 0.3s ease;
+}
+
+.btnRegister:hover {
+  cursor: pointer;
+  background-color: #f9b020;
 }
 
 .loginContainer {
