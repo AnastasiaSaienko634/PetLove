@@ -1,0 +1,64 @@
+.friendItem {
+  display: flex;
+  width: 320px;
+  background-color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 40px;
+  border-radius: 14px;
+}
+
+/* logo */
+.logofriend {
+  width: 90px;
+  height: 90px;
+  border-radius: 100px;
+}
+
+/* work days */
+.workDaysFriend {
+  display: flex;
+  justify-content: right;
+  margin-left: auto;
+  padding: 8px;
+  background-color: #fff4df;
+  color: #f6b83d;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -2%;
+  width: 94px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+
+/* title */
+.friendTitle {
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: -4%;
+  color: #262626;
+}
+
+/* li */
+.friendLi {
+  color: #26262680;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -2%;
+}
+
+.friendSpan {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -2%;
+  color: #262626;
+}

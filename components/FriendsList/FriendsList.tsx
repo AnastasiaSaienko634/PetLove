@@ -19,8 +19,9 @@ interface Props {
 }
 
 const FriendsList = ({ friends }: Props) => {
+  console.log(friends);
   return (
-    <ul>
+    <ul className={css.friendList}>
       {friends.map((friend) => (
         <FriendsItem friend={friend} key={friend._id} />
       ))}
