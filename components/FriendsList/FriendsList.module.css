@@ -7,4 +7,5 @@ body {
   gap: 20px;
   flex-wrap: wrap;
   margin-left: 64px;
+  padding-bottom: 80px;
 }

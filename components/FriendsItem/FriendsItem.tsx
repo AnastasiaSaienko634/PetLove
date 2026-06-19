@@ -35,7 +35,7 @@ const FriendsItem = ({ friend }: Props) => {
               Address:{" "}
               <span className={css.friendSpan}>
                 {friend.address.length > 23
-                  ? friend.address.slice(0, 23) + "..."
+                  ? friend.address.slice(0, 16) + "..."
                   : friend.address}
               </span>
             </li>

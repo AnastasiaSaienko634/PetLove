@@ -12,7 +12,7 @@ const HeaderWh = () => {
       </Link>
       <ul className={css.linkList}>
         <li>
-          <Link className={css.listItem} href="">
+          <Link className={css.listItem} href="/news">
             News
           </Link>
         </li>
