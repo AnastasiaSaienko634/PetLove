@@ -4,8 +4,25 @@ body {
 
 .friendList {
   display: flex;
-  gap: 20px;
   flex-wrap: wrap;
-  margin-left: 64px;
-  padding-bottom: 80px;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+}
+
+/* Tablets  */
+@media (min-width: 768px) {
+  .friendList {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+/* Desktops  */
+@media (min-width: 1024px) {
+  .friendList {
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 24px;
+  }
 }

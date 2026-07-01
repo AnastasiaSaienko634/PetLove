@@ -10,7 +10,7 @@ const OurFriends = async () => {
   const friends = await fetchfriends();
   return (
     <div className={css.friendsConteiner}>
-      <HeaderWh />
+      {/* <HeaderWh /> */}
       <Title>Our friends</Title>
       <FriendsList friends={friends.data} />
     </div>

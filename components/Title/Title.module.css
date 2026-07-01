@@ -2,7 +2,9 @@
   display: flex;
   margin-right: auto;
   justify-content: center;
-  padding-left: 64px;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
   font-weight: 600;
   font-size: 54px;
   line-height: 54px;
@@ -11,4 +13,24 @@
   padding-top: 20px;
   padding-bottom: 80px;
   color: #262626;
+}
+
+/* Tablets  */
+@media (min-width: 768px) {
+  .title {
+    display: flex;
+    gap: 20px;
+    padding-left: 0px;
+  }
+}
+
+/* Desktops  */
+@media (min-width: 1024px) {
+  .title {
+    max-width: 1200px;
+    align-items: none;
+    gap: 24px;
+    padding-left: 40px;
+    margin-left: 0;
+  }
 }
