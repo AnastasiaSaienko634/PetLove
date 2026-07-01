@@ -5,13 +5,13 @@
   align-items: center;
   margin-right: auto;
   margin-left: auto;
-  font-weight: 600;
-  font-size: 54px;
+  font-weight: 500;
+  font-size: 28px;
   line-height: 54px;
   letter-spacing: -3%;
   font-family: "Inter", sans-serif;
   padding-top: 20px;
-  padding-bottom: 80px;
+  padding-bottom: 30px;
   color: #262626;
 }
 
@@ -32,5 +32,9 @@
     gap: 24px;
     padding-left: 40px;
     margin-left: 0;
+    font-size: 56px;
+    padding-bottom: 80px;
+    font-weight: 600;
+    font-size: 40px;
   }
 }
