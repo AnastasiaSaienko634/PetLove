@@ -123,6 +123,11 @@
   padding: 12px 67px 12px 67px;
   border-radius: 30px;
   text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.logInLink:hover {
+  background-color: #fff4df;
+  color: #f6b83d;
 }
 
 .registrationLink {
@@ -131,4 +136,10 @@
   padding: 12px 41px 12px 41px;
   border-radius: 30px;
   text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.registrationLink:hover {
+  background-color: #fbe7c1;
+  color: #f6b83d;
 }
