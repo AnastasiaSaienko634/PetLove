@@ -5,11 +5,16 @@ import css from "./PhoneHeader.module.css";
 import Link from "next/link";
 import { FaHeart } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdClose } from "react-icons/io";
 
 const PhoneHeader = () => {
   const [visiableModal, setVisiableModal] = useState(false);
   const handleClick = () => {
     setVisiableModal(true);
+  };
+
+  const handleClose = () => {
+    setVisiableModal(false);
   };
 
   return (
@@ -28,32 +33,33 @@ const PhoneHeader = () => {
 
       {visiableModal && (
         <div className={css.modal}>
-          <div className={css.header}>
-            <ul className={css.linkList}>
-              <li>
-                <Link className={css.listItem} href="/news">
-                  News
-                </Link>
-              </li>
-              <li>
-                <Link className={css.listItem} href="">
-                  Find pet
-                </Link>
-              </li>
-              <li>
-                <Link className={css.listItem} href="/friends">
-                  Our friends
-                </Link>
-              </li>
-            </ul>
-            <div className={css.authorizationLinks}>
-              <Link className={css.logInLink} href="/login">
-                Log In
+          <button className={css.closebtn} onClick={handleClose}>
+            <IoMdClose className={css.closeIcon} />
+          </button>
+          <ul className={css.linkList}>
+            <li>
+              <Link className={css.listItemNews} href="/news">
+                News
               </Link>
-              <Link className={css.registrationLink} href="/register">
-                Registration
+            </li>
+            <li>
+              <Link className={css.listItemPet} href="">
+                Find pet
               </Link>
-            </div>
+            </li>
+            <li>
+              <Link className={css.listItemFriend} href="/friends">
+                Our friends
+              </Link>
+            </li>
+          </ul>
+          <div className={css.authorizationLinks}>
+            <Link className={css.logInLink} href="/login">
+              Log In
+            </Link>
+            <Link className={css.registrationLink} href="/register">
+              Registration
+            </Link>
           </div>
         </div>
       )}
