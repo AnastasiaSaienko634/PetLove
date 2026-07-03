@@ -260,3 +260,39 @@
   padding-left: 16px;
   color: #ef2447;
 }
+
+.friendsConteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1216px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dekstopHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1216px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mobileHeader {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .dekstopHeader {
+    display: none;
+  }
+
+  .mobileHeader {
+    display: block;
+  }
+}

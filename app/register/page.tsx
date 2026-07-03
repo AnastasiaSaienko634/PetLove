@@ -7,6 +7,7 @@ import cat from "../../public/cat.png";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import Link from "next/link";
 import * as Yup from "yup";
+import PhoneHeader from "@/components/PhoneHeader/PhoneHeader";
 
 const RegisterSchema = Yup.object({
   email: Yup.string()
@@ -24,7 +25,12 @@ const RegisterSchema = Yup.object({
 const Register = () => {
   return (
     <div className={css.registerPage}>
-      <HeaderWh />
+      <header className={css.dekstopHeader}>
+        <HeaderWh />
+      </header>
+      <header className={css.mobileHeader}>
+        <PhoneHeader />
+      </header>
       <div className={css.containerRegister}>
         <div className={css.rightSide}>
           <Image
